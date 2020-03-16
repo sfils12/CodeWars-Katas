@@ -35,3 +35,24 @@ function greetDevelopers(list) {
 
 	return greetDevelopers(list);
 }
+
+// ES6 syntax
+
+const greetDevelopers = (list) =>
+	list.map((obj) => ({
+		...obj,
+		greeting: `Hi ${obj.firstName}, what do you like the most about ${obj.language}?`
+	}));
+
+return greetDevelopers(list);
+
+// or
+
+const greetDevelopers = (list) => {
+	let returnObjArray = [];
+	for (let i of list) {
+		i.greeting = `Hi ${i.firstName}, what do you like the most about ${i.language}?`;
+		returnObjArray.push(i);
+	}
+	return returnObjArray;
+};
