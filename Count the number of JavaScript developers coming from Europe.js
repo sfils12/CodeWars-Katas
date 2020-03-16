@@ -33,3 +33,24 @@ function countDevelopers(list) {
 
 	return euroDevs.length;
 }
+
+// ES6 Syntax using a different method
+
+const countDevelopers = (list) => {
+	let counter = 0;
+	for (let i of list) {
+		console.log(i);
+		if (i.continent === 'Europe' && i.language === 'JavaScript') {
+			counter++;
+		}
+	}
+	return counter;
+};
+
+countDevelopers(list);
+
+// or
+
+const countDevelopers = (list) => list.filter((x) => (x.continent = 'Europe' && x.language === 'JavaScript')).length;
+
+countDevelopers(list);
