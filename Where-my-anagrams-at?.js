@@ -34,7 +34,7 @@ anagrams("racer", ["crazer", "carer", "racar", "caers", "racer"]);
 // =-=-=-=-=-=-=-=-=-=-=-=-
 // let anagrams = (word, words) => words.filter(w => w.split('').sort().join('') === word.split('').sort().join(''));
 
-// =-=-=-=-=-=-=-=-=-=-=-=-
+// =-=-=-=-=-=-=-=-=-=-=-=- SAME ASMY SOLUTION. Included to show "e" is just a placeholder
 // function anagrams(word, words) {
 //   return words.filter(function (e) {
 //       return e.split('').sort().join('') === word.split('').sort().join('');
@@ -42,12 +42,12 @@ anagrams("racer", ["crazer", "carer", "racar", "caers", "racer"]);
 // }
 
 // =-=-=-=-=-=-=-=-=-=-=-=-
-// String.prototype.sort = function() {
+// String.sort = function () {
 //   return this.split("").sort().join("");
 // };
 
 // function anagrams(word, words) {
-//   return words.filter(function(x) {
-//       return x.sort() === word.sort();
+//   return words.filter(function (x) {
+//     return x.sort() === word.sort();
 //   });
 // }
