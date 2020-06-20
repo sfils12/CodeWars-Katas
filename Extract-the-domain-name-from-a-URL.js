@@ -12,3 +12,12 @@ domainName = (url) => {
 };
 
 domainName("https://www.github.com");
+
+// Alterative code:
+
+// function domainName(url){
+//   return  url.replace('http://', '')
+//              .replace('https://', '')
+//              .replace('www.', '')
+//              .split('.')[0];
+// }
